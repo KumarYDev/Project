@@ -11,6 +11,14 @@ git add . (this will add all files in the repo, "." will add all files )
 
 then you need to commit.
 
-git commit -m("write the messages you did for this commit")
+git commit -m "write the messages you did for this commit"
 
+
+then if you want to see all commits made so far you can type
+
+git log
+
+If you want to see commits made by a particular person
+
+git log --author="UserName of the person"
 
