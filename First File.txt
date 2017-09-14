@@ -1,0 +1,16 @@
+This is the first file
+
+Steps:
+Go to the folder You want to store the project in git bash and type.
+
+git init
+
+Make changes u want and type.
+
+git add . (this will add all files in the repo, "." will add all files )
+
+then you need to commit.
+
+git commit -m("write the messages you did for this commit")
+
+
