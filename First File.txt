@@ -1,4 +1,8 @@
 This is the first file
+git work flow
+
+Working copy>Staging Area>Repository
+
 
 Steps:
 Go to the folder You want to store the project in git bash and type.
@@ -9,6 +13,9 @@ Make changes u want and type.
 
 git add . (this will add all files in the repo, "." will add all files )
 
+git add FirstFile.txt (this will add only the given filename)
+
+
 then you need to commit.
 
 git commit -m "write the messages you did for this commit"
@@ -18,7 +25,39 @@ then if you want to see all commits made so far you can type
 
 git log
 
+
 If you want to see commits made by a particular person
 
 git log --author="UserName of the person"
+
+
+to see the changes made to the file
+git diff	(compares files in Working copy and repo)
+git diff --staged   (compares files in Staging area and repo)
+
+to remove file in reo as follows
+git rm File.txt (removes file in local repo)
+git commit -m "file deleted" (removes file in main repo)
+
+to rename the files
+git mv oldname.txt new name.txt (then commit it will be renamed in local and main repo)
+
+to files the files
+git mv filename.txt new_Path_to_target/filename.txt  (then commit it will be moved in local and main repo)
+
+to add files to main repo directly
+git commit -am "file add directly to main repo" 
+
+if you mess up with any files then type
+git checkout -- filename.txt (this will replace the the file with repo file and you local repo will be fine as before)
+
+if you messed up added file to staging area then
+git reset HEAD filename.txt (this will remove the file from staging area)
+
+to get the old version of files 
+git log (check which version u want)
+git checkout <first 5or6 characters of the commit> -- filename.txt (this will replace the the file with old commit repo file and you local repo will change as before)
+
+
+
 
